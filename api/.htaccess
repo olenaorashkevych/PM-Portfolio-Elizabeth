@@ -1,0 +1,6 @@
+# Default encoding
+AddDefaultCharset utf-8
+
+# Redirect a page by default
+DirectoryIndex index.php
+

@@ -16,12 +16,12 @@ function apiSendEmail() {
         $_POST = json_decode($post_data, true);
     }
 
-	echo '<pre>'; print_r($_POST); echo "</pre>";
-	
-	// Формуємо заголовки
-	$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
-	$headers .= "From: noreply@noreply.com\r\n";
-	$headers .= "X-Mailer: PHP/" . phpversion();
+	 // Формуємо заголовки з правильною адресою відправника
+     $headers = "MIME-Version: 1.0\r\n";
+     $headers .= "Content-type: text/html; charset=utf-8\r\n";
+     $headers .= "From: noreply@projectsbyelizabeth.com\r\n"; // Вкажіть реальний домен
+     $headers .= "Reply-To: noreply@projectsbyelizabeth.com\r\n"; // Також реальний домен
+     $headers .= "X-Mailer: PHP/" . phpversion();
 
 	// Відправляємо лист
 	return (mail($_POST['to'], $_POST['subject'], $_POST['message'], $headers)) ? "Лист успішно відправлено." : "Помилка відправки листа.";

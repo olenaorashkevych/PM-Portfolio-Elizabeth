@@ -1,3 +1,7 @@
+<?php
+    include 'contentEditable.php'
+?>
+
 <!doctype html>
 
 <html lang="en">
@@ -59,48 +63,27 @@
 
             <!-- INTRO -->
             <section id="intro">
-
-
                 <!-- CONTAINER MID -->
                 <div class="container-mid">
-
-
                     <!-- ANIMATION CONTAINER -->
                     <div class="animation-container animation-fade-down" data-animation-delay="0">
-
-                        <h1>I’m Elizabeth Wood,</h1>
-
+                        <h1 contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="intro-text-1"><?=$text['intro-text-1']?></h1>
                     </div>
                     <!-- /ANIMATION CONTAINER -->
-
 
                     <!-- ANIMATION CONTAINER -->
                     <div class="animation-container animation-fade-left" data-animation-delay="300">
-
-                        <p class="subline">I have been working in project management for over six years. My passion is
-                            taking a vision and coordinating with teams of people to bring that inspiration to life. I
-                            would love to work with you and discuss your vision!
-
-                        </p>
-
+                        <p class="subline" contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="intro-text-2"><?=$text['intro-text-2']?></p>
                     </div>
                     <!-- /ANIMATION CONTAINER -->
-
 
                     <!-- ANIMATION CONTAINER -->
                     <div class="animation-container animation-fade-up" data-animation-delay="600">
-
-                        <a href="#about" class="smooth-scroll">Learn More<i class="fa fa-angle-down"
-                                aria-hidden="true"></i></a>
-
+                        <a href="#about" class="smooth-scroll">Learn More<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     </div>
                     <!-- /ANIMATION CONTAINER -->
-
-
                 </div>
                 <!-- /CONTAINER MID -->
-
-
             </section>
             <!-- /INTRO -->
 
@@ -108,19 +91,9 @@
             <!-- ABOUT -->
             <section id="about">
 
-
-                <h3 class="headline scroll-animated-from-right">Why I can help you.</h3>
-
-                <p class="scroll-animated-from-right">When we work together, the first thing we do is discuss your
-                    budget for your proposed project. From there, I take the hassle out of finding the best estimate for
-                    the job. I do this by sourcing cost effective vendors and I do this without sacrificing quality.</p>
-
-                <p class="scroll-animated-from-right">Once quality, cost effective talent is acquired, we reconvene to
-                    review the scope of the project and discuss the timeline of the upcoming project. From here, I work
-                    with vendors to control the deliverables to ensure they align with your expectations of the project.
-
-                </p>
-
+                <h3 class="headline scroll-animated-from-right" contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="about-text-1"><?=$text['about-text-1']?></h3>
+                <p class="scroll-animated-from-right"contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="about-text-2"><?=$text['about-text-2']?></p>
+                <p class="scroll-animated-from-right" contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="about-text-3"><?=$text['about-text-3']?></p>
 
             </section>
             <!-- /ABOUT -->
@@ -130,22 +103,24 @@
             <section id="service">
 
 
-                <h3 class="headline scroll-animated-from-right">What I can do for you.</h3>
+                <h3 class="headline scroll-animated-from-right" contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="service-text-1"><?=$text["service-text-1"]?></h3>
 
 
                 <ul class="services-list">
 
 
-                    <li class="scroll-animated-from-right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Small
-                        turnkey
-                        home construction projects</li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <span contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="service-text-2"><?=$text["service-text-2"]?></span>
+                    </li>
                     <!-- <li class="scroll-animated-from-right"><i class="fa fa-eye" aria-hidden="true"></i>Small turnkey
                         home construction projects
                     </li> -->
                     <!-- <li class="scroll-animated-from-right"><i class="fa fa-database" aria-hidden="true"></i>Turnkey
                         Website Development</li> -->
-                    <li class="scroll-animated-from-right"><i class="fa fa-television" aria-hidden="true"></i>Turnkey
-                        Website Development
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-television" aria-hidden="true"></i>
+                        <span contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="service-text-3"><?=$text["service-text-3"]?></span>
                     </li>
                     <!--<li class="scroll-animated-from-right"><i class="fa fa-square-o" aria-hidden="true"></i>UI & UX
                         Design</li>
@@ -430,25 +405,28 @@
                     <section id="contact">
 
 
-                        <h3 class="headline scroll-animated-from-right">Contact Me.</h3>
+                        <h3 class="headline scroll-animated-from-right" contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-1"><?=$text["contacts-text-1"]?></h3>
 
 
                         <!-- CONTACT LIST -->
                         <ul class="contact-list">
 
-                            <li class="scroll-animated-from-right"><i class="fa fa-mobile"
-                                    aria-hidden="true"></i>512-210-4666
+                            <li class="scroll-animated-from-right">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <span contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-2"><?=$text["contacts-text-2"]?></span>
 
                             </li>
-                            <li class="scroll-animated-from-right"><i class="fa fa-envelope-o"
-                                    aria-hidden="true"></i>elizabethday@outlook.com</li>
+                            <li class="scroll-animated-from-right">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span contentEditable="<?=($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-3"><?=$text["contacts-text-3"]?></span>
+                            </li>
 
                         </ul>
                         <!-- /CONTACT LIST -->
 
 
                         <!-- CONTACT FORM -->
-                        <form id="contact-form" action="assets/php/contact.php" method="post">
+                        <form id="contact-form">
 
 
                             <input id="contact-form-name" type="text" name="name"
@@ -507,9 +485,17 @@
     <!-- /CONTENT AREA -->
 
 
+    <? if ($admin == true) { ?>
+    <button class="button-save-text">Save text</button>
+    <? } ?>
+    
     <!-- JAVASCRIPTS -->
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    
+    <? if ($admin == true) { ?>
+        <script type="text/javascript" src="assets/js/contentEditable.js"></script>
+    <? } ?>
 
 
 </body>
